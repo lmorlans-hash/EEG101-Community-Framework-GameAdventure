@@ -1,0 +1,621 @@
+:root {
+    --bordeaux: #7a1739;
+    --pink-bg: #fce4ec;
+    --white: #ffffff;
+    --dark-text: #333333;
+}
+
+body {
+    background-color: var(--pink-bg);
+    color: var(--dark-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ── Navigation ── */
+.navbar {
+    background-color: var(--bordeaux);
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.navbar-brand, .nav-link {
+    color: var(--white) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #ffb6c1 !important;
+}
+
+/* ── Hero Banner ── */
+.hero-banner {
+    background-color: var(--bordeaux);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: linear-gradient(135deg, #7a1739 0%, #4a0d22 100%);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.hero-banner h1 {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* ── Containers & Cards ── */
+.section-box {
+    background-color: var(--bordeaux);
+    color: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    height: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.white-box {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid var(--bordeaux);
+    margin-bottom: 20px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+.white-box:hover {
+    transform: translateY(-5px);
+}
+
+/* ── Typography ── */
+h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+}
+.section-title-dark {
+    color: var(--bordeaux);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--bordeaux);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.white-box h5 {
+    color: var(--bordeaux);
+    font-weight: bold;
+    border-bottom: 1px solid var(--pink-bg);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* ── Images & Team ── */
+.team-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    margin-bottom: 15px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+.team-img:hover {
+    transform: scale(1.1);
+}
+.map-img2 {
+    border: 4px solid #333;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.map-img {
+    border: 4px solid var(--bordeaux);
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ── Team email links ── */
+.team-email {
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    display: block;
+    margin-top: 2px;
+    transition: color 0.2s ease;
+}
+.team-email:hover {
+    color: #ffb6c1;
+    text-decoration: underline;
+}
+
+/* ── Custom Badges ── */
+.highlight-badge {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 15px;
+    color: var(--bordeaux);
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ── Footer ── */
+.footer {
+    background-color: var(--bordeaux);
+    color: var(--white);
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 5px solid #4a0d22;
+}
+
+/* ── Organisation section ── */
+#organisation .planning-card {
+    background-color: var(--white);
+    border: 2px solid var(--bordeaux);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+#organisation .planning-card:hover {
+    transform: translateY(-4px);
+}
+#organisation .planning-card h5 {
+    color: var(--bordeaux);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--bordeaux);
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+}
+#organisation .planning-card img {
+    border: 3px solid var(--bordeaux);
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ══════════════════════════════════════════════
+   ROOM CARDS (section salles de jeux)
+══════════════════════════════════════════════ */
+.room-card {
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.room-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--bordeaux);
+    box-shadow: 0 12px 28px rgba(122, 23, 57, 0.18);
+}
+.room-card-img {
+    cursor: pointer;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.2s ease;
+}
+.room-card-img:hover {
+    opacity: 0.88;
+}
+.room-card-title {
+    color: #212529;
+}
+
+/* Bouton bordeaux custom */
+.btn-bordeaux {
+    background-color: var(--bordeaux);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.btn-bordeaux:hover {
+    background-color: #5a1029;
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+/* ══════════════════════════════════════════════
+   MODALS ENRICHIS — style identique à l'accordéon
+   Sélecteurs renforcés pour écraser Bootstrap
+══════════════════════════════════════════════ */
+
+/* Fond de la modal — on cible .modal-content via Bootstrap */
+.modal .modal-content.modal-custom {
+    background-color: var(--bordeaux) !important;
+    background-image: none !important;
+    border: 2px solid rgba(255,255,255,0.35) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    color: #fff !important;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+}
+
+/* Header — écrase le fond blanc Bootstrap */
+.modal .modal-content.modal-custom .modal-header.modal-custom-header {
+    background: rgba(0,0,0,0.22) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+    padding: 18px 22px 14px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: 16px;
+}
+
+.modal-num {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    opacity: 0.55;
+    display: block;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.modal .modal-content.modal-custom .modal-custom-title {
+    color: #fff !important;
+    font-size: 1.15rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+}
+
+.modal-pillar {
+    font-size: 0.78rem;
+    opacity: 0.60;
+    font-style: italic;
+    color: #fff;
+    display: block;
+}
+
+/* Bouton fermeture ✕ custom — remplace la btn-close Bootstrap */
+.modal-close-btn {
+    background: rgba(255,255,255,0.15) !important;
+    border: 1px solid rgba(255,255,255,0.45) !important;
+    border-radius: 50% !important;
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #fff !important;
+    font-size: 0.95rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+    flex-shrink: 0;
+    margin-top: 2px;
+    opacity: 1 !important;  /* Bootstrap met opacity:0.5 sur btn-close */
+    padding: 0 !important;
+}
+.modal-close-btn:hover {
+    background: rgba(255,255,255,0.32) !important;
+    transform: scale(1.12);
+    color: #fff !important;
+}
+
+/* Body — pas de padding Bootstrap */
+.modal .modal-content.modal-custom .modal-body.modal-custom-body {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+/* Layout interne deux colonnes — copie exacte de mj-panel-inner */
+.modal-inner {
+    display: flex; 
+    gap: 26px;
+    padding: 20px 22px 26px;
+}
+
+/* ── Colonne gauche ── */
+.modal-left {
+    flex: 1;
+    min-width: 0;
+}
+.modal-left p {
+    color: rgba(255,255,255,0.92);
+    font-size: 0.96rem;
+    line-height: 1.65;
+    margin-bottom: 10px;
+}
+.modal-left a {
+    color: #ffb6c1;
+    text-decoration: underline;
+}
+.modal-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+/* Screenshots dans la colonne gauche */
+.modal-screenshots {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+}
+.modal-screenshots img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba(255,255,255,0.22);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    display: block;
+}
+
+/* ── Colonne droite : carte auteur ── */
+.modal-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 130px;
+    max-width: 150px;
+    background: rgba(255,255,255,0.10);
+    border-radius: 12px;
+    padding: 16px 12px;
+    text-align: center;
+    align-self: flex-start;
+    flex-shrink: 0;
+}
+.modal-author-img {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.7);
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+.modal-author-img:hover {
+    transform: scale(1.07);
+}
+.modal-author-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.modal-author-msg {
+    font-size: 0.76rem;
+    color: rgba(255,255,255,0.68);
+    font-style: italic;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Responsive modals */
+@media (max-width: 600px) {
+    .modal-inner {
+        flex-direction: column;
+    }
+    .modal-right {
+        max-width: 100%;
+        flex-direction: row;
+        gap: 14px;
+        padding: 12px;
+        text-align: left;
+        align-items: center;
+    }
+    .modal-author-img {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+}
+
+/* ── Accordion (conservé si réutilisé ailleurs) ── */
+.minijeux-accordion {
+    margin-top: 1.5rem;
+}
+.mj-item {
+    border: 2px solid rgba(255,255,255,0.35);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.07);
+    transition: border-color 0.25s;
+}
+.mj-item.open {
+    border-color: rgba(255,255,255,0.85);
+}
+.mj-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+    transition: background 0.2s;
+}
+.mj-trigger:hover {
+    background: rgba(255,255,255,0.1);
+}
+.mj-num {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+    min-width: 24px;
+}
+.mj-name {
+    flex: 1;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.mj-chevron {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    transition: transform 0.3s ease;
+}
+.mj-item.open .mj-chevron {
+    transform: rotate(180deg);
+}
+.mj-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mj-panel.open {
+    max-height: none;
+}
+.mj-left img {
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+}
+.mj-panel-inner {
+    display: flex;
+    gap: 28px;
+    padding: 20px 24px 24px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+.mj-left {
+    flex: 1;
+    min-width: 0;
+}
+.mj-left h4 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+.mj-left p {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.97rem;
+    line-height: 1.65;
+    margin-bottom: 10px;
+}
+.mj-left a {
+    color: #ffb6c1;
+    text-decoration: underline;
+}
+.mj-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 0.83rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.mj-pillar {
+    font-size: 0.82rem;
+    opacity: 0.65;
+    font-style: italic;
+}
+.mj-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 140px;
+    max-width: 160px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 18px 14px;
+    text-align: center;
+    align-self: flex-start;
+}
+.mj-author-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.7);
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+.mj-author-img:hover {
+    transform: scale(1.07);
+}
+.mj-author-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+}
+.mj-author-msg {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.7);
+    font-style: italic;
+    line-height: 1.4;
+    margin: 0;
+}
+@media (max-width: 600px) {
+    .mj-panel-inner {
+        flex-direction: column;
+    }
+    .mj-right {
+        max-width: 100%;
+        flex-direction: row;
+        gap: 14px;
+        padding: 12px;
+        text-align: left;
+    }
+    .mj-author-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* ── Espace navbar ── */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* ── Titre mini-jeux ── */
+.mj-section-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #fff;
+    border-left: 4px solid rgba(255,255,255,0.6);
+    padding-left: 12px;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+}
+#matrice .matrice-card {
+    background-color: var(--white);
+    border: 2px solid var(--bordeaux);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
