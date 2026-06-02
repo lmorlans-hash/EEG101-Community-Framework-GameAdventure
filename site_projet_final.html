@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEG101 - Community Framework Adventure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid px-4">
+            <span class="navbar-brand">EEG101 : Community Framework GameAdventure</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#contexte">Contexte et Objectif</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organisation">L'Organisation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ux">Démarche CCU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solution">Notre Jeu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipe">L'Équipe</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-banner">
+        <div class="container">
+            <h1 class="display-4">EEG101 - Community Framework GameAdventure</h1>
+            <p class="lead mt-3">Un espace virtuel et gamifié pour sensibiliser les scientifiques au Community Framework EEG101.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="contexte" class="mb-5">
+            <h2 class="section-title-dark">Le Contexte &amp; L'Objectif</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-7">
+                    <div class="white-box">
+                        <h5 class="fw-bold">Le Projet EEG101</h5>
+                        <p>L'électroencéphalographie (EEG) est un outil essentiel en neurosciences, mais ses pratiques manquent de standardisation éthique et méthodologique. Dans le cadre du projet européen <strong>EEG101</strong>, nos clients ont rédigé un "Community Framework" invitant les chercheurs à s'engager sur 3 grands axes.</p>
+
+                        <h5 class="fw-bold mt-4">Notre Mission</h5>
+                        <p>Créer un espace virtuel sur <em>WorkAdventure</em> pour sensibiliser la communauté et les inviter à partager au Community Framework EEG101. L'enjeu cognitique est le suivant : <strong>Comment adapter une plateforme de jeu à un public professionnel scientifique non forcément initié aux Jeux vidéos et plateformes interactives ?</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="section-box">
+                        <h4 class="fw-bold mb-4" style="border-bottom: 1px solid white; padding-bottom:10px;">Les 3 Piliers du Framework</h4>
+                        <ul class="fs-5" style="line-height: 1.8;">
+                            <li>🔬 <strong>Validité scientifique :</strong> Intégrité, robustesse et reproductibilité.</li>
+                            <li>🌍 <strong>Démocratisation :</strong> Accessibilité et inclusion des savoirs.</li>
+                            <li>🌱 <strong>Responsabilité :</strong> Impact socio-environnemental et éthique.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="organisation" class="mb-5">
+            <h2 class="section-title-dark">L'Organisation</h2>
+
+            <p class="lead mb-4">Afin d'assurer le bon déroulement du projet, nous avons établi dès le début un planning prévisionnel
+                basé sur les différents livrables attendus par les clients. Cette organisation nous a permis de répartir les tâches au fil
+                de l'année, de fixer des objectifs intermédiaires et de suivre l'avancement du projet de manière progressive.</p>
+
+            <div class="row g-4 justify-content-center mb-4">
+                <div class="col-md-8">
+                    <div class="planning-card text-center">
+                        <h5>Planning Prévisionnel</h5>
+                        <img src="planning previsionnel.png" alt="Planning prévisionnel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="white-box mb-4">
+                <p class="mb-0">Ce planning a été construit en tenant compte des différentes phases du projet : découverte des
+                    concepts et des outils, conception du parcours scénarisé, développement dans l'environnement WorkAdventure, puis
+                    déploiement et accompagnement des utilisateurs lors des ateliers.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center mb-4">
+                <div class="col-md-8">
+                    <div class="planning-card text-center">
+                        <h5>Planning Réel</h5>
+                        <img src="planning réel.png" alt="Planning réel">
+                    </div>
+                </div>
+            </div>
+
+            <div class="white-box">
+                <p class="mb-0">Le planning réel met en évidence une organisation plus détaillée avec l'ajout d'activités complémentaires
+                    telles que les réunions régulières avec les clients and le tuteur, la conception du poster ou encore les phases de
+                    communication et de coordination (CCU). Par exemple, l'implémentation du parcours de jeu a débuté plus tôt que prévu,
+                    dès la fin du mois de décembre au lieu de février, afin d'anticiper certaines difficultés techniques. Cette anticipation 
+                    a notamment permis de réévaluer l'utilisation de Tiled, dont la prise en main et l'intégration se sont révélées trop coûteuses au regard du temps disponible.
+                     À l'inverse, la phase de conception du plan de jeu a commencé plus tard que prévu, en décembre au lieu de novembre, et s'est prolongée
+                    afin d'affiner le scénario et les mécaniques du parcours.</p>
+            </div>
+            <p class="lead mb-4"> <u>Répartition du travail :</u></p>
+            <div class="white-box">
+                <p class="mb-0"> Nous avons décidé de répartir le travail en 2 groupes :
+                <strong>Charline</strong> et <strong>Josépha</strong> s'occupent marjoritairement des mini-jeux et <strong>Lucaina</strong> et <strong>Louna</strong> de la map dans WorkAdventure.</p>
+            </div>
+        </section>
+
+        <section id="ux" class="mb-5">
+            <h2 class="section-title-dark">Conception Centrée Utilisateur (CCU)</h2>
+            <p class="lead mb-4">Lors du 6 novembre, lors de la conférence de lancement du projet EEG101, nous avons observé qu'<strong>une dizaine de scientifiques se sont perdus</strong> ou n'ont pas réussi à s'adapter à l'environnement.
+                Pour répondre à la désorientation observée, nous avons mené des tests utilisateurs rigoureux (protocole d'observation, pensée à voix haute, entretiens) auprès de profils représentatifs (ex: enseignants-chercheurs).</p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="white-box">
+                        <h5>1. Problèmes Identifiés</h5>
+                        <ul>
+                            <li><strong>Peur de l'erreur :</strong> Crainte de cliquer au mauvais endroit ou d'interagir par erreur dans un contexte professionnel.</li>
+                            <li><strong>Problème d'accessibilité :</strong> Difficulté à accéder aux différents items/objets dans le jeu.</li>
+                            <li><strong>Désorientation :</strong> Manque d'une vue globale ("map") et d'un chemin clair pour naviguer.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="white-box">
+                        <h5>2. Entretien &amp; Faisabilité</h5>
+                        <p>Nous avons rencontré <strong>le créateur de WorkAdventure (Greg)</strong> pour explorer les limites techniques de l'outil et valider nos idées de création (gestion des PNJ, silent zones, pop-ups).</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="white-box">
+                        <h5>3. Solutions Apportées</h5>
+                        <ul>
+                            <li>Proposition de Créer une <strong>Antichambre / Tutoriel</strong> isolée pour tester les commandes sans pression.</li>
+                            <li>Passage d'une carte en "Archipel" à une <strong>Map "Hackaton"</strong>, beaucoup plus dirigiste.</li>
+                            <li>Utilisation de <strong>Genially</strong> pour des mini-jeux clairs et encapsulés.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" class="mb-5">
+            <div class="section-box">
+                <h2>Le Jeu Final</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>Notre carte structure l'apprentissage en plusieurs étapes claires :</p>
+                        <ol style="font-size: 1.1rem; line-height: 1.8;">
+                            <li><strong>L'Antichambre :</strong> Espace d'apparition avec prise en main des contrôles avec des messages d'information.</li>
+                            <li><strong>L'Agora :</strong> Zone centrale ("General meeting room") pour les conférences orales.</li>
+                            <li><strong>Les 6 salles de Jeux :</strong> Chaque jeu illustre un pilier du Community Framework notamment sur "Rendre les données FAIR", la démocratisation des données et la Responsabilité Scientifique socio-environnementale présentés via Genially ou Site Web.</li>
+                            <li><strong>La Zone d'entrée/Sortie :</strong> Le but ultime du parcours, où le chercheur peut découvrir et signer le Community Framework.</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="map.png" alt="Carte finale WorkAdventure EEG101" class="img-fluid map-img mb-3">
+                        <p class="small text-white"><em>Aperçu de la map WorkAdventure "Hackaton"</em></p>
+                    </div>
+                
+            <p class="mj-section-title">L'Antichambre</p>
+
+            <div class="minijeux-accordion" id="minijeuxAccordion">
+
+            <!-- ── MINI-JEU 1 ─────────────────────────────── -->
+            <div class="mj-item">
+                <button class="mj-trigger" data-target="mj1">
+                <span class="mj-name">Description détaillée</span>
+                <span class="mj-chevron">&#9660;</span>
+                </button>
+                <div class="mj-panel" id="mj1">
+                <div class="mj-panel-inner">
+
+                    <!-- Colonne gauche : description + screenshots -->
+                    <div class="mj-left">
+                    <h4>Comment fonctionne l'Antichambre ? </h4>
+                    <p>
+                        Après avoir effectué le tutoriel proposé par WorkAdventure : 
+                    </p>
+                    <img src="tuto1.png" alt="image du tutoriel de WorkAdventure">
+                    <img src="tuto2.png" alt="image du tutoriel de WorkAdventure">
+                    <img src="tuto3.png" alt="image du tutoriel de WorkAdventure">
+                    <em>(La langue du contenu change en fonction de l'endroit où se trouve l'utilisateur, elle sera en général en anglais)</em>
+                    </p>
+                    <p></p>
+                    <p>
+                        Le tutoriel de l'Antichambre commence avec un texte explicatif (<em>c'est une zone silencieuse, nous ne pouvons pas communiquer dans cette pièce afin de ne pas "interagir par erreur"</em>) :
+                    </p>
+                    <img src="tuto4.png" alt="image du tutoriel de l'Antichambre">
+                    <p>
+                        En réalisant ce qu'on nous demande de faire, on obtient : 
+                    </p>
+                    <img src="tuto5.png" alt="image du tutoriel de l'Antichambre">
+                    <p>
+                        Puis après avoir parlé au 2ème PNJ, on peut enfin se rendre à la sortie 
+                    </p>
+                    <img src="tuto7.png" alt="image du tutoriel de l'Antichambre">
+                    <p></p>
+                    <div class="mj-tag">Le jeu peut ainsi commencer !</div>
+                    <img src="tuto8.png" alt="image du début de la map">
+                    <div class="mj-pillar">- Tutoriel de l'Antichambre</div>
+                    </div>
+
+                    <!-- Colonne droite : auteur -->
+                    <div class="mj-right">
+                    <img src="lulu.jpeg" alt="Lucaïna Rakotomalala" class="mj-author-img">
+                    <p class="mj-author-name">Lucaïna Rakotomalala</p>
+                    <img src="louna.png" alt="Louna Morlans" class="mj-author-img">
+                    <p class="mj-author-name">Louna Morlans</p>
+                    <p class="mj-author-msg">« Voilà ce qu'on vous propose. »</p>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+            <script>
+                document.querySelectorAll('.mj-trigger').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                    const item = btn.closest('.mj-item');
+                    const panel = document.getElementById(btn.dataset.target);
+                    const isOpen = item.classList.contains('open');
+
+                    // Fermer tous les panneaux ouverts
+                    document.querySelectorAll('.mj-item.open').forEach(openItem => {
+                        openItem.classList.remove('open');
+                        openItem.querySelector('.mj-panel').classList.remove('open');
+                    });
+
+                    // Ouvrir celui-ci si il était fermé
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        panel.classList.add('open');
+                    }
+                    });
+                });
+            </script>
+        </section>
+        <section id="salles-jeux" class="mb-5">
+            <h2 class="section-title-dark">Focus sur les 6 Salles de Jeux</h2>
+            <p class="lead mb-4 text-center">Cliquez sur l'image d'une salle pour découvrir les détails et objectifs du mini-jeu associé.</p>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <!-- Salle 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm room-card">
+                        <img src="room1.png" class="card-img-top room-card-img" alt="Salle de Jeu 1" data-bs-toggle="modal" data-bs-target="#modalJeu1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold room-card-title">Salle 1 : Find my open data</h5>
+                            <p class="card-text text-muted small">🔬 Validité Scientifique · Données FAIR</p>
+                            <button class="btn btn-sm btn-bordeaux" data-bs-toggle="modal" data-bs-target="#modalJeu1">Voir la description</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salle 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm room-card">
+                        <img src="room2.png" class="card-img-top room-card-img" alt="Salle de Jeu 2" data-bs-toggle="modal" data-bs-target="#modalJeu2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold room-card-title">Salle 2 : BIDS Explorer</h5>
+                            <p class="card-text text-muted small">🔬 Validité scientifique · Données FAIR (I+R)</p>
+                            <button class="btn btn-sm btn-bordeaux" data-bs-toggle="modal" data-bs-target="#modalJeu2">Voir la description</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salle 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm room-card">
+                        <img src="room3.png" class="card-img-top room-card-img" alt="Salle de Jeu 3" data-bs-toggle="modal" data-bs-target="#modalJeu3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold room-card-title">Salle 3 : Analyse it right</h5>
+                            <p class="card-text text-muted small">🔬 Validité scientifique · Intégrité des données</p>
+                            <button class="btn btn-sm btn-bordeaux" data-bs-toggle="modal" data-bs-target="#modalJeu3">Voir la description</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salle 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm room-card">
+                        <img src="room4.png" class="card-img-top room-card-img" alt="Salle de Jeu 4" data-bs-toggle="modal" data-bs-target="#modalJeu4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold room-card-title">Salle 4 : Build your team</h5>
+                            <p class="card-text text-muted small">🌍 Démocratisation · Inclusion des savoirs</p>
+                            <button class="btn btn-sm btn-bordeaux" data-bs-toggle="modal" data-bs-target="#modalJeu4">Voir la description</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salle 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm room-card">
+                        <img src="room5.png" class="card-img-top room-card-img" alt="Salle de Jeu 5" data-bs-toggle="modal" data-bs-target="#modalJeu5">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold room-card-title">Salle 5 : Research horizon</h5>
+                            <p class="card-text text-muted small">🌍 Démocratisation · Accessibilité des savoirs</p>
+                            <button class="btn btn-sm btn-bordeaux" data-bs-toggle="modal" data-bs-target="#modalJeu5">Voir la description</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salle 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm room-card">
+                        <img src="room6.png" class="card-img-top room-card-img" alt="Salle de Jeu 6" data-bs-toggle="modal" data-bs-target="#modalJeu6">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold room-card-title">Salle 6 : Choose wisely</h5>
+                            <p class="card-text text-muted small">🌱 Responsabilité · Éthique socio-environnementale</p>
+                            <button class="btn btn-sm btn-bordeaux" data-bs-toggle="modal" data-bs-target="#modalJeu6">Voir la description</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MODAL 1 — Find My Open Data -->
+        <div class="modal fade" id="modalJeu1" tabindex="-1" aria-labelledby="modalJeu1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom">
+                    <div class="modal-header modal-custom-header">
+                        <div>
+                            <span class="modal-num">01</span>
+                            <h5 class="modal-title modal-custom-title" id="modalJeu1Label">Find My Open Data</h5>
+                            <span class="modal-pillar">🔬 Validité scientifique · Données FAIR</span>
+                        </div>
+                        <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Fermer">&#x2715;</button>
+                    </div>
+                    <div class="modal-body modal-custom-body">
+                        <div class="modal-inner">
+                            <!-- Colonne gauche -->
+                            <div class="modal-left">
+                                <p>Aidez JM à trouver des données utiles pour préparer sa prochaine expérience !</p>
+                                <div class="modal-screenshots">
+                                    <img src="jeu 1.png" alt="Aperçu salle 1">
+                                    <p>Utilisez <strong>Open Data Repositories</strong> pour trouver des données.</p>
+                                    <img src="jeu 1 encore.png" alt="Aperçu salle 1">
+                                    <img src="jeu 1 encore encore.png" alt="Aperçu salle 1">
+                                    <p>Lien du site : <a href="https://view.genially.com/69cacf800b2cf25561cc4a71" target="_blank" rel="noopener">Clique sur moi</a></p>
+        
+                                </div>
+                            </div>
+                            <!-- Colonne droite : auteur -->
+                            <div class="modal-right">
+                                <img src="lulu.jpeg" alt="Lucaïna Rakotomalala" class="modal-author-img">
+                                <p class="modal-author-name">Lucaïna Rakotomalala</p>
+                                <p class="modal-author-msg">« Voilà ce que je vous propose. »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 2 — BIDS Explorer -->
+        <div class="modal fade" id="modalJeu2" tabindex="-1" aria-labelledby="modalJeu2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom">
+                    <div class="modal-header modal-custom-header">
+                        <div>
+                            <span class="modal-num">02</span>
+                            <h5 class="modal-title modal-custom-title" id="modalJeu2Label">BIDS Explorer</h5>
+                            <span class="modal-pillar">🔬 Validité scientifique · Données FAIR (I+R)</span>
+                        </div>
+                        <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Fermer">&#x2715;</button>
+                    </div>
+                    <div class="modal-body modal-custom-body">
+                        <div class="modal-inner">
+                            <div class="modal-left">
+                                <p>JM a maintenant un CPP validé et a monté une expérience. La collecte des données EEG a commencé, mais c'est un peu le bazar.</p>
+                                <p>À vous de ranger ! Retrouvez les enregistrements et les différentes données associées à ces acquisitions (présents dans la pièce de WorkAdventure) afin de passer les données en format <strong>BIDS</strong>.</p>
+                                <div class="modal-screenshots">
+                                    <img src="Jeu_BIDS.png" alt="Mini-jeux 2 sur le site">
+                                </div>
+                                <p></p>
+                                <p>Explorez la structure du format <strong>BIDS</strong> (Brain Imaging Data Structure), le standard qui permet aux données EEG d'être comprises et réutilisées par tous les chercheurs du monde entier.</p>
+                                <p>Lien du site : <a href="https://lmorlans-hash.github.io/Game_BIDS/" target="_blank" rel="noopener">Clique sur moi</a></p>    
+                            </div>
+                            <div class="modal-right">
+                                <img src="louna.png" alt="Louna Morlans" class="modal-author-img">
+                                <p class="modal-author-name">Louna Morlans</p>
+                                <p class="modal-author-msg">« Voilà ce que je vous propose. »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 3 — Analyse It Right -->
+        <div class="modal fade" id="modalJeu3" tabindex="-1" aria-labelledby="modalJeu3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom">
+                    <div class="modal-header modal-custom-header">
+                        <div>
+                            <span class="modal-num">03</span>
+                            <h5 class="modal-title modal-custom-title" id="modalJeu3Label">Analyse It Right !</h5>
+                            <span class="modal-pillar">🔬 Validité scientifique · Intégrité des données</span>
+                        </div>
+                        <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Fermer">&#x2715;</button>
+                    </div>
+                    <div class="modal-body modal-custom-body">
+                        <div class="modal-inner">
+                            <div class="modal-left">
+                                <p>Aidez JM à analyser et publier ses données !</p>
+                                <div class="modal-screenshots">
+                                    <img src="jeu 3.png" alt="Aperçu salle 3">
+                                    <img src="jeu 3 encore.png" alt="Aperçu salle 3">
+                                    <p>Découvrez les différentes <strong>toolbox</strong> à votre disposition comme <strong>MNE-Python</strong>.</p>
+                                    <p>Lien du site : <a href="https://view.genially.com/69b7b5fc6275041711fd3eb1/interactive-content-aidez-j-m-a-analyser-et-publier-les-donnees" target="_blank" rel="noopener">Clique sur moi</a></p>   
+                                </div>
+                            </div>
+                            <div class="modal-right">
+                                <img src="charline.png" alt="Charline Ingrand" class="modal-author-img">
+                                <p class="modal-author-name">Charline Ingrand</p>
+                                <p class="modal-author-msg">« Voilà ce que je vous propose. »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 4 — Build Your Team -->
+        <div class="modal fade" id="modalJeu4" tabindex="-1" aria-labelledby="modalJeu4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom">
+                    <div class="modal-header modal-custom-header">
+                        <div>
+                            <span class="modal-num">04</span>
+                            <h5 class="modal-title modal-custom-title" id="modalJeu4Label">Build Your Team</h5>
+                            <span class="modal-pillar">🌍 Démocratisation · Inclusion des savoirs</span>
+                        </div>
+                        <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Fermer">&#x2715;</button>
+                    </div>
+                    <div class="modal-body modal-custom-body">
+                        <div class="modal-inner">
+                            <div class="modal-left">
+                                <p>Constituez une équipe de recherche <strong>diverse et inclusive</strong>. Découvrez comment la pluridisciplinarité et la diversité renforcent la qualité et l'impact de la recherche scientifique.</p>
+                                <div class="modal-screenshots">
+                                    <img src="jeu 4.png" alt="Aperçu salle 4">
+                                    <p>Selectionnez également vos participants de façon à augmenter la <strong>diversité</strong> des participants à l’étude et des populations échantillonnées. </p>
+                                    <img src="jeu 4 encore.png" alt="Aperçu salle 4">
+                                     <p>Lien du site : <a href="https://charline0.github.io/EEG_democratisation/" target="_blank" rel="noopener">Clique sur moi</a></p>
+                                </div>
+                            </div>
+                            <div class="modal-right">
+                                <img src="charline.png" alt="Charline Ingrand" class="modal-author-img">
+                                <p class="modal-author-name">Charline Ingrand</p>
+                                <p class="modal-author-msg">« Voilà ce que je vous propose. »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 5 — Research Horizon -->
+        <div class="modal fade" id="modalJeu5" tabindex="-1" aria-labelledby="modalJeu5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom">
+                    <div class="modal-header modal-custom-header">
+                        <div>
+                            <span class="modal-num">05</span>
+                            <h5 class="modal-title modal-custom-title" id="modalJeu5Label">Research Horizon</h5>
+                            <span class="modal-pillar">🌍 Démocratisation · Accessibilité des savoirs</span>
+                        </div>
+                        <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Fermer">&#x2715;</button>
+                    </div>
+                    <div class="modal-body modal-custom-body">
+                        <div class="modal-inner">
+                            <div class="modal-left">
+                                <p>Explorez les <strong>nouvelles frontières</strong> de la recherche en neurosciences. Quelles questions émergentes méritent d'être posées ? Comment orienter votre agenda de recherche vers plus d'impact ?</p>
+                                <div class="modal-screenshots">
+                                    <img src="jeu 5.png" alt="Aperçu salle 5">
+                                    <p> Participez à un jeu immersive qui vous plonge aux coeurs des questions fondamentales liées à <strong>l'accessibilité </strong>des résultats de la recherche!</p>
+                                    <img src="jeu 5 fin.png" alt="Aperçu salle 5">
+                                     <p>Lien du site : <a href="https://charline0.github.io/EEG_democratisation.2/" target="_blank" rel="noopener">Clique sur moi</a></p>
+                               
+                                </div>
+                            </div>
+                            <div class="modal-right">
+                                <img src="charline.png" alt="Charline Ingrand" class="modal-author-img">
+                                <p class="modal-author-name">Charline Ingrand</p>
+                                <p class="modal-author-msg">« Voilà ce que je vous propose. »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 6 — Choose Wisely -->
+        <div class="modal fade" id="modalJeu6" tabindex="-1" aria-labelledby="modalJeu6Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content modal-custom">
+                    <div class="modal-header modal-custom-header">
+                        <div>
+                            <span class="modal-num">06</span>
+                            <h5 class="modal-title modal-custom-title" id="modalJeu6Label">Choose Wisely</h5>
+                            <span class="modal-pillar">🌱 Responsabilité · Éthique socio-environnementale</span>
+                        </div>
+                        <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Fermer">&#x2715;</button>
+                    </div>
+                    <div class="modal-body modal-custom-body">
+                        <div class="modal-inner">
+                            <div class="modal-left">
+                                <p>Prenez des décisions éthiques face à des <strong>dilemmes de recherche</strong> réels : financement, publication, impact environnemental des protocoles. Chaque choix a des conséquences sur la communauté scientifique et la société.</p>
+                                <div class="modal-screenshots">
+                                    <img src="jeu 6.png" alt="Aperçu salle 6">
+                                    <img src="jeu 6 encore.png" alt="Aperçu salle 6">
+                                    <p>À la fin de ce mini-jeu, les joueurs pourront avoir un bilan sur le poids de leurs décisions.</p>
+                                    <img src="jeu 6 encore encore.png" alt="Aperçu salle 6">
+                                    <p>Lien du site : <a href="https://jopfleger.github.io/EEG101/dilemma-game/index.html" target="_blank" rel="noopener">Clique sur moi</a></p>
+                                </div>
+                            </div>
+                            <div class="modal-right">
+                                <img src="jojo.png" alt="Josépha Pfleger" class="modal-author-img">
+                                <p class="modal-author-name">Josépha Pfleger</p>
+                                <p class="modal-author-msg">« Voilà ce que je vous propose. »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mb-5">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="white-box">
+                        <h2 class="section-title-dark fs-4">Outils &amp; Contraintes</h2>
+                        <ul class="mb-0">
+                            <li><strong>WorkAdventure :</strong> Moteur 2D imposant des images légères et limitant les utilisateurs simultanés (15 max hors événement).</li>
+                            <li><strong>Genially for Education :</strong> Outil de création de contenu interactif intégré via iframes dans la map.</li>
+                            <li><strong>Sites internet :</strong> Conception et développement de pages web pour l'implémentation des jeux et présenter le projet.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="white-box" style="border-color: #2e7d32;">
+                        <h2 class="section-title-dark fs-4" style="color: #2e7d32; border-bottom-color: #2e7d32;">Engagement DD&amp;RS</h2>
+                        <p>Ce projet s'inscrit pleinement dans une démarche de Responsabilité Sociétale et Environnementale :</p>
+                        <ul class="mb-0">
+                            <li><strong>Écologie :</strong> Espace de conférence virtuel permettant de limiter les déplacements internationaux en avion dans le cadre du Community Framework qui lui même incite à prendre des Responsabilité Socio-environnementales.</li>
+                            <li><strong>Social :</strong> Outil en libre accès favorisant la démocratisation des connaissances scientifiques.</li>
+                            <li><strong>Éthique :</strong> Promotion de la transparence et de la reproductibilité des données (Validité scientifique, données FAIR).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  id="matrice" class="mb-5">
+            <div class="row g-4 justify-content-center mb-4">
+                    <div class="col-md-8">
+                        <div class="white-box">
+                            <h2 class="section-title-dark fs-4">Matrice des Risques</h2>
+                            <div class="matrice text-center">
+                                <img src="matrice.png" alt="Matrice des Risques" style="height: 700px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe" class="mb-5">
+            <div class="section-box text-center">
+                <h2>L'Équipe de Projet</h2>
+                <p class="mb-5">Étudiant et Étudiantes en 1ère année à l'ENSC - Bordeaux INP</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="charline.png" alt="Charline Ingrand" class="team-img">
+                        <p class="fw-bold mt-2 mb-0">Charline Ingrand</p>
+                        <a href="https://mail.google.com/mail/?view=cm&to=cingrand@ensc.fr" target="_blank" class="team-email">cingrand@ensc.fr</a>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="louna.png" alt="Louna Morlans" class="team-img">
+                        <p class="fw-bold mt-2 mb-0">Louna Morlans</p>
+                        <p class="small text-white-50">Resp. Communication</p>
+                        <a href="https://mail.google.com/mail/?view=cm&to=lmorlans@ensc.fr" target="_blank" class="team-email">lmorlans@ensc.fr</a>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="jojo.png" alt="Josépha Pfleger" class="team-img">
+                        <p class="fw-bold mt-2 mb-0">Josépha Pfleger</p>
+                        <a href="https://mail.google.com/mail/?view=cm&to=jpfleger@ensc.fr" target="_blank" class="team-email">jpfleger@ensc.fr</a>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="lulu.jpeg" alt="Lucaïna Rakotomalala" class="team-img">
+                        <p class="fw-bold mt-2 mb-0">Lucaïna Rakotomalala</p>
+                        <a href="https://mail.google.com/mail/?view=cm&to=lrakotomalal001@ensc.fr" target="_blank" class="team-email">lrakotomalal001@ensc.fr</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-1 fw-bold fs-5">Projet Transdisciplinaire 1A ENSC - 2025/2026</p>
+            <p class="mb-2"><strong>Clients :</strong> Alexandra Corneyllie &amp; Maximilien Chaumon (CNRS) | <strong>Tuteurs :</strong>Catherine Semal et Pierre-Alexandre Favier</p>
+            <p class="small text-white-50 mb-0">Soutenance du projet - Juin 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
